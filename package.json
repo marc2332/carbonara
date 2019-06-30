@@ -1,6 +1,6 @@
 {
   "name": "carbonara",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Transcompiler from CarbonaraScript to Javascriot",
   "main": "index.js",
   "scripts": {},
@@ -10,11 +10,7 @@
   "author": "mkenzo_8 <mespinsanz@gmail.com>",
   "license": "MIT",
   "readme": "readme.md",
-  "dependencies": {
-    "chalk": "^2.4.2",
-    "fs": "0.0.1-security",
-    "optimist": "^0.6.1"
-  },
+  "dependencies": {},
   "bin": {
     "build": "index.js"
   }
