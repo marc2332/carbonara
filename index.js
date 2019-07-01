@@ -117,7 +117,7 @@ module.exports = {
         case 'function':
           const name = getKeyWord (i + 1);
           data.storedFunctions.push (name);
-          data.output += `${'   '.repeat (openBrackets)}  ${name} = ( ${getKeyWord (i + 3)} ) => { ${data.compression == true ? '' : '\n'}`;
+          data.output += `${'   '.repeat (openBrackets)} let ${name} = ( ${getKeyWord (i + 3)} ) => { ${data.compression == true ? '' : '\n'}`;
           i += 4;
           openBrackets++;
           break;
@@ -176,7 +176,6 @@ module.exports = {
           }
       }
     }
-    console.log(data);
     openBrackets = data.compression == true ? 1 : openBrackets;
     if (input.consoleOutput === true) {
       console.log (`\n   <-- Code Output --> \n\n ${data.output} `);
